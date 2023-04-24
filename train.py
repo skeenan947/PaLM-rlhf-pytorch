@@ -115,3 +115,6 @@ for i in tqdm.tqdm(range(NUM_BATCHES), mininterval=10.0, desc="training"):
         sample = model.generate(GENERATE_LENGTH, inp[None, ...])
         output_str = decode_tokens(sample[0])
         accelerator.print(output_str, "\n")
+
+torch.save(model.state_dict(), os.getenv('MODEL_PATH', './model.pt'))
+
