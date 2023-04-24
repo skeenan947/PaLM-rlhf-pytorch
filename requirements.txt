@@ -1,0 +1,6 @@
+tqdm
+lion-pytorch
+beartype
+einops
+accelerate
+torch>=1.6
