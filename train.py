@@ -2,6 +2,7 @@ import gzip
 import random
 import tqdm
 import numpy as np
+import os
 
 import torch
 from lion_pytorch import Lion
